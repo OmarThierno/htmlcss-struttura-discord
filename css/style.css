@@ -5,8 +5,14 @@
   box-sizing: border-box;
 }
 
-/* Common  */
+ul > li {
+  list-style-type: none;
+}
 
+/* Common  */
+body {
+  margin-bottom: 40px;
+}
 
 /* header  */
 .header {
@@ -27,22 +33,31 @@
 
 nav div {
   background-color: #DAA520;
-  height: 20px;
+  height: 40px;
   border: 2px dashed black;
 }
 
 .nav-left,
 .nav-right {
   width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-middle {
   width: 50%;
 }
 
+div.nav-middle > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  height: 100%;
+}
+
 /* main  */
-
-
 
 .container {
   width: 100%;
@@ -76,6 +91,28 @@ nav div {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.block-middle-top,
+.block-middle-middle,
+.block-middle-bottom,
+.block-main-footer, 
+.box-green-footer,
+.block-aside {
+  display: flex;
+}
+
+.box-blue {
+  background-color: #1E90FF;
+  width: 60%;
+  height: 100%;
+}
+
+.box-pink {
+  background-color: #FFC0CB;
+  width: 40%;
+  height: 100%;
 }
 
 
@@ -87,8 +124,71 @@ nav div {
 }
 
 .main-bottom {
-  height: 400px;
+  height: 500px;
 }
 .block-bottom {
+  background-color: #228B22;
   height: 100%;
+}
+
+/* footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #23272A;
+  height: 300px;
+
+}
+
+/* footer main  */
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 90%;
+  padding: 10px 0 20px;
+}
+
+.block-main-footer,
+.box-dark-pink, 
+.box-green-footer{
+  height: 100%;
+}
+
+.box-dark-pink {
+  background-color: #F08080;
+  width: 30%;
+}
+
+.box-green-footer {
+  background-color: #20B2AA;
+  width: 70%;
+}
+
+.mini-box-green-footer {
+  width: calc(100% / 4);
+  border: 2px dashed white;
+}
+
+/* aside footer  */
+.aside {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.block-aside {
+  width: 600px;
+  height: 30px;
+  background-color: #7FFFD4;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-block-aside {
+  background-color: #FDB0B4;
+  width: 20px;
+  height: 10px;
 }
