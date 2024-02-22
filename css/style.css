@@ -6,6 +6,35 @@
 }
 
 /* Common  */
-body {
-  background-color: aquamarine;
+
+
+/* header  */
+.header {
+  background-color: #ADD8E6;
+  height: 60px;
+  text-align: center;
+}
+
+.header nav {
+  display: flex;
+  height: 100%;
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav div {
+  background-color: #DAA520;
+  height: 20px;
+  border: 2px dashed black;
+}
+
+.nav-left,
+.nav-right {
+  width: 25%;
+}
+
+.nav-middle {
+  width: 50%;
 }
